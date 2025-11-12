@@ -1,0 +1,65 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  </head>
+
+  <body>
+    <h1>Tic Tac Toe</h1>
+
+    <div class="scoreboard">
+      <div class="player">
+        <h5>Player X</h5>
+        <span id="scoreX">0</span>
+      </div>
+      <div class="player">
+        <h5>Player O</h5>
+        <span id="scoreO">0</span>
+      </div>
+    </div>
+
+    <div class="turn-indicator" id="turnIndicator">Current Turn: X</div>
+
+    <div class="board">
+      <button class="tile" id="t1"></button>
+      <button class="tile" id="t2"></button>
+      <button class="tile" id="t3"></button>
+      <button class="tile" id="t4"></button>
+      <button class="tile" id="t5"></button>
+      <button class="tile" id="t6"></button>
+      <button class="tile" id="t7"></button>
+      <button class="tile" id="t8"></button>
+      <button class="tile" id="t9"></button>
+    </div>
+
+    <div class="controls">
+      <select id="startPlayer" class="select-player">
+        <option class="bg-danger" value="X" selected>Start with Player X</option>
+        <option class="bg-danger" value="O">Start with Player O</option>
+      </select>
+      <button class="reset-btn" id="reset-btn">🔄 Reset Game</button>
+    </div>
+
+    <!-- JS -->
+    <script src="./assets/js/jquary.js"></script>
+    <script src="./assets/js/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+  </body>
+
+  </html>

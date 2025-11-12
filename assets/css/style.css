@@ -1,0 +1,168 @@
+ body {
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #00e0ff, #ff00c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      animation: glowTitle 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowTitle {
+      from {
+        text-shadow: 0 0 10px #00e0ff;
+      }
+
+      to {
+        text-shadow: 0 0 20px #ff00c8;
+      }
+    }
+
+    .scoreboard {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 15px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      padding: 15px 30px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .player {
+      text-align: center;
+    }
+
+    .player h5 {
+      font-size: 1rem;
+      font-weight: 500;
+      opacity: 0.8;
+      margin: 10px 0;
+    }
+
+    .player span {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #FFD369;
+    }
+
+    /* ------------------ CURRENT PLAYER ------------------ */
+    .turn-indicator {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px #00e0ff;
+    }
+
+    /* ------------------ GAME BOARD ------------------ */
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 15px;
+      justify-content: center;
+      perspective: 800px;
+      transform-style: preserve-3d;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        transform: scale(0.8) rotateX(30deg);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1) rotateX(0);
+        opacity: 1;
+      }
+    }
+
+    .tile {
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 15px;
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transform: rotateY(0deg);
+    }
+
+    .tile:hover {
+      transform: scale(1.1) rotateY(5deg);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 15px #00e0ff;
+    }
+
+    .tile.x {
+      color: #00FFF0;
+      text-shadow: 0 0 15px #00FFF0;
+      background: rgba(0, 255, 255, 0.08);
+    }
+
+    .tile.o {
+      color: #FF00A6;
+      text-shadow: 0 0 15px #FF00A6;
+      background: rgba(255, 0, 166, 0.08);
+    }
+
+    .controls {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      align-items: center;
+    }
+
+    .select-player {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 0.7rem 1.2rem;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .select-player:hover {
+      box-shadow: 0 0 10px #00e0ff;
+    }
+
+    .reset-btn {
+      background: linear-gradient(135deg, #00e0ff, #ff00c8);
+      border: none;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .reset-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px #ff00c8;
+    }
+
+    .bg-danger {
+      background-color: #82c2bfc4 !important;
+    }
+
