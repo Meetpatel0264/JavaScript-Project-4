@@ -12,10 +12,10 @@
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 40px;
+      margin-bottom: 16px;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 32px;
       background: linear-gradient(90deg, #00e0ff, #ff00c8);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -35,7 +35,7 @@
 
     .scoreboard {
       display: flex;
-      gap: 2rem;
+      gap: 32px;
       margin-bottom: 15px;
       background: rgba(255, 255, 255, 0.08);
       border-radius: 15px;
@@ -49,21 +49,21 @@
     }
 
     .player h5 {
-      font-size: 1rem;
+      font-size: 16px;
       font-weight: 500;
       opacity: 0.8;
       margin: 10px 0;
     }
 
     .player span {
-      font-size: 1.8rem;
+      font-size: 22px;
       font-weight: 600;
       color: #FFD369;
     }
 
     /* ------------------ CURRENT PLAYER ------------------ */
     .turn-indicator {
-      font-size: 1.2rem;
+      font-size: 18px;
       margin-bottom: 15px;
       text-shadow: 0 0 10px #00e0ff;
     }
@@ -97,7 +97,7 @@
       background: rgba(255, 255, 255, 0.1);
       border: none;
       border-radius: 15px;
-      font-size: 2.5rem;
+      font-size: 40px;
       color: #fff;
       font-weight: bold;
       cursor: pointer;
@@ -126,15 +126,15 @@
 
     .controls {
       display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
+      gap: 16px;
+      margin-top: 32px;
       align-items: center;
     }
 
     .select-player {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
-      padding: 0.7rem 1.2rem;
+      padding: 12px 18px;
       color: #fff;
       border: 1px solid rgba(255, 255, 255, 0.2);
       cursor: pointer;
@@ -149,7 +149,7 @@
       background: linear-gradient(135deg, #00e0ff, #ff00c8);
       border: none;
       color: white;
-      padding: 0.8rem 1.5rem;
+      padding: 13px 20px;
       border-radius: 12px;
       font-weight: 600;
       letter-spacing: 0.5px;
